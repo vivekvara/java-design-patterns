@@ -21,14 +21,26 @@
  * THE SOFTWARE.
  */
 
-package com.iluwatar.circuitbreaker;
+package com.iluwatar.versionnumber;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 /**
- * Exception thrown when {@link RemoteService} does not respond successfully.
+ * Application test
  */
-public class RemoteServiceException extends Exception {
+class AppTest {
 
-  public RemoteServiceException(String message) {
-    super(message);
+  /**
+   * Issue: Add at least one assertion to this test case.
+   *
+   * Solution: Inserted assertion to check whether the execution of the main method in {@link App#main(String[])}
+   * throws an exception.
+   */
+
+  @Test
+  void shouldExecuteApplicationWithoutException() {
+    assertDoesNotThrow(() -> App.main(new String[]{}));
   }
 }

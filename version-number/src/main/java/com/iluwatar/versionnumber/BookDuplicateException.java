@@ -21,14 +21,13 @@
  * THE SOFTWARE.
  */
 
-package com.iluwatar.circuitbreaker;
+package com.iluwatar.versionnumber;
 
 /**
- * Exception thrown when {@link RemoteService} does not respond successfully.
+ * When someone has tried to add a book which repository already have.
  */
-public class RemoteServiceException extends Exception {
-
-  public RemoteServiceException(String message) {
+public class BookDuplicateException extends Exception {
+  public BookDuplicateException(String message) {
     super(message);
   }
 }

@@ -21,14 +21,13 @@
  * THE SOFTWARE.
  */
 
-package com.iluwatar.circuitbreaker;
+package com.iluwatar.versionnumber;
 
 /**
- * Exception thrown when {@link RemoteService} does not respond successfully.
+ * Client has tried to update a stale version of the book.
  */
-public class RemoteServiceException extends Exception {
-
-  public RemoteServiceException(String message) {
+public class VersionMismatchException extends Exception {
+  public VersionMismatchException(String message) {
     super(message);
   }
 }
